@@ -43,6 +43,7 @@ namespace MasterClass.WebApi
             services.AddRepository();
             services.AddBusiness();
             services.AddService();
+            services.AddMasterClassAuthentication(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,6 +61,8 @@ namespace MasterClass.WebApi
             app.UseAuthorization();
 
             app.UseMasterClassSwaggerUI();
+
+            app.UseAuthentication();
 
             app.UseMiddleware<TrackMachineMiddleware>();
             app.UseMiddleware<TrackRequestContextMiddleware>();

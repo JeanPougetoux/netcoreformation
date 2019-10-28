@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\formation\\Documents\\projects\\Business\\Business.csproj": {}
+    "C:\\Users\\formation\\Documents\\netcoreformation\\Business\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\formation\\Documents\\projects\\Business\\Business.csproj": {
+    "C:\\Users\\formation\\Documents\\netcoreformation\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\projects\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\netcoreformation\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\formation\\Documents\\projects\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\projects\\Business\\obj\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\formation\\Documents\\projects\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\formation\\Documents\\projects\\Repository\\Repository.csproj"
+              "C:\\Users\\formation\\Documents\\netcoreformation\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Repository\\Repository.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\formation\\Documents\\projects\\Repository\\Repository.csproj": {
+    "C:\\Users\\formation\\Documents\\netcoreformation\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\projects\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\netcoreformation\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\formation\\Documents\\projects\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\projects\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

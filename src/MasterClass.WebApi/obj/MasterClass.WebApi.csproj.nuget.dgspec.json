@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\formation\\Documents\\projects\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj": {}
+    "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\formation\\Documents\\projects\\Business\\Business.csproj": {
+    "C:\\Users\\formation\\Documents\\netcoreformation\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\projects\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\netcoreformation\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\formation\\Documents\\projects\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\projects\\Business\\obj\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\formation\\Documents\\projects\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\formation\\Documents\\projects\\Repository\\Repository.csproj"
+              "C:\\Users\\formation\\Documents\\netcoreformation\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Repository\\Repository.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\formation\\Documents\\projects\\CoreLibrary\\CoreLibrary.csproj": {
+    "C:\\Users\\formation\\Documents\\netcoreformation\\CoreLibrary\\CoreLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\projects\\CoreLibrary\\CoreLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\netcoreformation\\CoreLibrary\\CoreLibrary.csproj",
         "projectName": "CoreLibrary",
-        "projectPath": "C:\\Users\\formation\\Documents\\projects\\CoreLibrary\\CoreLibrary.csproj",
+        "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\CoreLibrary\\CoreLibrary.csproj",
         "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\projects\\CoreLibrary\\obj\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\netcoreformation\\CoreLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -124,14 +124,14 @@
         }
       }
     },
-    "C:\\Users\\formation\\Documents\\projects\\Repository\\Repository.csproj": {
+    "C:\\Users\\formation\\Documents\\netcoreformation\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\projects\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\netcoreformation\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\formation\\Documents\\projects\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\projects\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -186,14 +186,14 @@
         }
       }
     },
-    "C:\\Users\\formation\\Documents\\projects\\Service\\Service.csproj": {
+    "C:\\Users\\formation\\Documents\\netcoreformation\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\projects\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\netcoreformation\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\formation\\Documents\\projects\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\projects\\Service\\obj\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -212,8 +212,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\formation\\Documents\\projects\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\formation\\Documents\\projects\\Business\\Business.csproj"
+              "C:\\Users\\formation\\Documents\\netcoreformation\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Business\\Business.csproj"
+              },
+              "C:\\Users\\formation\\Documents\\netcoreformation\\CoreLibrary\\CoreLibrary.csproj": {
+                "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\CoreLibrary\\CoreLibrary.csproj"
               }
             }
           }
@@ -227,11 +230,19 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
             }
           },
           "imports": [
@@ -248,14 +259,14 @@
         }
       }
     },
-    "C:\\Users\\formation\\Documents\\projects\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj": {
+    "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\projects\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj",
         "projectName": "MasterClass.WebApi",
-        "projectPath": "C:\\Users\\formation\\Documents\\projects\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj",
+        "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj",
         "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\projects\\src\\MasterClass.WebApi\\obj\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -274,11 +285,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\formation\\Documents\\projects\\CoreLibrary\\CoreLibrary.csproj": {
-                "projectPath": "C:\\Users\\formation\\Documents\\projects\\CoreLibrary\\CoreLibrary.csproj"
+              "C:\\Users\\formation\\Documents\\netcoreformation\\CoreLibrary\\CoreLibrary.csproj": {
+                "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\CoreLibrary\\CoreLibrary.csproj"
               },
-              "C:\\Users\\formation\\Documents\\projects\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\formation\\Documents\\projects\\Service\\Service.csproj"
+              "C:\\Users\\formation\\Documents\\netcoreformation\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\Service\\Service.csproj"
               }
             }
           }
@@ -292,6 +303,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -313,10 +328,6 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.0.0-rc4, )"
-            },
-            "Swashbuckle.AspNetCore.Swagger": {
-              "target": "Package",
-              "version": "[4.0.1, )"
             }
           },
           "imports": [
