@@ -1,12 +1,8 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using MasterClass.Repository.Models.Users;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Repository.Mocks.Users;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MasterClass.WebApi.DependencyInjection.Extensions
 {

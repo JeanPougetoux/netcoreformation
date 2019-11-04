@@ -1,0 +1,8 @@
+C:\Users\formation\Documents\MasterClass WebApi\src\MasterClass.Core\bin\Debug\netstandard2.0\MasterClass.Core.deps.json
+C:\Users\formation\Documents\MasterClass WebApi\src\MasterClass.Core\bin\Debug\netstandard2.0\MasterClass.Core.dll
+C:\Users\formation\Documents\MasterClass WebApi\src\MasterClass.Core\bin\Debug\netstandard2.0\MasterClass.Core.pdb
+C:\Users\formation\Documents\MasterClass WebApi\src\MasterClass.Core\obj\Debug\netstandard2.0\MasterClass.Core.AssemblyInfoInputs.cache
+C:\Users\formation\Documents\MasterClass WebApi\src\MasterClass.Core\obj\Debug\netstandard2.0\MasterClass.Core.AssemblyInfo.cs
+C:\Users\formation\Documents\MasterClass WebApi\src\MasterClass.Core\obj\Debug\netstandard2.0\MasterClass.Core.dll
+C:\Users\formation\Documents\MasterClass WebApi\src\MasterClass.Core\obj\Debug\netstandard2.0\MasterClass.Core.pdb
+C:\Users\formation\Documents\MasterClass WebApi\src\MasterClass.Core\obj\Debug\netstandard2.0\MasterClass.Core.csprojAssemblyReference.cache

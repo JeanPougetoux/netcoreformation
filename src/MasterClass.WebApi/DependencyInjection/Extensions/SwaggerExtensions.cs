@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
@@ -18,16 +17,13 @@ namespace MasterClass.WebApi.DependencyInjection.Extensions
 
         public static IServiceCollection AddMasterClassSwagger(this IServiceCollection services)
         {
-            services.AddSwaggerGen(genOptions =>
-            {
-                genOptions.SwaggerDoc(SWAGGER_DOCNAME,
-                    new Microsoft.OpenApi.Models.OpenApiInfo
+            services.AddSwaggerGen(genOptions
+                => genOptions.SwaggerDoc(SWAGGER_DOCNAME,
+                    new Info
                     {
                         Title = "MasterClass WebApi",
                         Version = VERSION
-                    });
-                genOptions.AddJwtBearerSecurity();
-            });
+                    }));
 
             return services;
         }
@@ -44,18 +40,15 @@ namespace MasterClass.WebApi.DependencyInjection.Extensions
         {
             options.AddSecurityDefinition(
                 JwtBearerDefaults.AuthenticationScheme,
-                new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+                new ApiKeyScheme
                 {
                     Name = "Authorization",
-                    In = Microsoft.OpenApi.Models.ParameterLocation.Header
+                    In = "header"
                 });
             options.AddSecurityRequirement(
-                new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+                new Dictionary<string, IEnumerable<string>>
                 {
-                   {
-                       new OpenApiSecurityScheme { Scheme = JwtBearerDefaults.AuthenticationScheme },
-                       new string[] {}
-                   }
+            { JwtBearerDefaults.AuthenticationScheme, new string[] {} }
                 });
         }
     }
