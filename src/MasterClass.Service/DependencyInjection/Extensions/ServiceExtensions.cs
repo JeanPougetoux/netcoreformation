@@ -1,11 +1,8 @@
-﻿using MasterClass.Service.Abstractions.Users;
+using MasterClass.Service.Abstractions.Users;
 using MasterClass.Service.Users;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace MasterClass.Service.DependencyInjection.Extensions
+namespace MasterClass.WebApi.StartupExtensions
 {
     public static class ServiceExtensions
     {
@@ -15,5 +12,5 @@ namespace MasterClass.Service.DependencyInjection.Extensions
 
             return services;
         }
-    }
+    } 
 }

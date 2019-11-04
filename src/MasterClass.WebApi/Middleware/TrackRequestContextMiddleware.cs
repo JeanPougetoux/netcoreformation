@@ -1,10 +1,7 @@
-﻿using MasterClass.WebApi.Interfaces;
+using System.Threading.Tasks;
+using MasterClass.WebApi.Middleware.ApplicationRequestContexts;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MasterClass.WebApi.Middleware
 {
@@ -22,6 +19,7 @@ namespace MasterClass.WebApi.Middleware
         public async Task InvokeAsync(HttpContext context, IApplicationRequestContext requestContext)
         {
             _logger.LogInformation($"X-Guid : {requestContext.Id}");
+            context.Response.Headers.Add("X-Guid", requestContext.Id.ToString());
             await _next(context);
         }
     }

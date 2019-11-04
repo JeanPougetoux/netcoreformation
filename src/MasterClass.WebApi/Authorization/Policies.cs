@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace MasterClass.WebApi.Authorization
+namespace MasterClass.WebApi.Authorization.Policy
 {
     public static class Policies
     {
@@ -11,5 +6,5 @@ namespace MasterClass.WebApi.Authorization
         public const string REQUIRED_ADMIN_ROLE = "RequiredAdminRole";
         public const string REQUIRED_MINIMUM_AGE_ALCOHOL = "RequiredMinimumAgeAlcohol";
         public const string REQUIRED_ALCOHOL_MAJORITY = "RequiredAlcoholMajority";
-    } 
+    }
 }

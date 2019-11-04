@@ -1,13 +1,9 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MasterClass.WebApi.DependencyInjection.Extensions
 {
@@ -18,18 +14,39 @@ namespace MasterClass.WebApi.DependencyInjection.Extensions
 
         public static IServiceCollection AddMasterClassSwagger(this IServiceCollection services)
         {
-            services.AddSwaggerGen(genOptions =>
-            {
-                genOptions.SwaggerDoc(SWAGGER_DOCNAME,
+            services.AddSwaggerGen(genOptions
+                => {
+                    genOptions.SwaggerDoc(SWAGGER_DOCNAME,
                     new Microsoft.OpenApi.Models.OpenApiInfo
                     {
                         Title = "MasterClass WebApi",
                         Version = VERSION
                     });
-                genOptions.AddJwtBearerSecurity();
-            });
+                    genOptions.AddJwtBearerSecurity();
+                }
+                );
+                    
 
             return services;
+        }
+
+        private static void AddJwtBearerSecurity(this SwaggerGenOptions options)
+        {
+            options.AddSecurityDefinition(
+                JwtBearerDefaults.AuthenticationScheme,
+                new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    In = ParameterLocation.Header
+                });
+            options.AddSecurityRequirement(
+                new OpenApiSecurityRequirement
+                {
+                    { 
+                        new OpenApiSecurityScheme{ Scheme = JwtBearerDefaults.AuthenticationScheme} ,
+                         new string[] {} 
+                    }
+                });
         }
 
         public static IApplicationBuilder UseMasterClassSwaggerUI(this IApplicationBuilder app)
@@ -39,24 +56,6 @@ namespace MasterClass.WebApi.DependencyInjection.Extensions
 
             return app;
         }
-
-        private static void AddJwtBearerSecurity(this SwaggerGenOptions options)
-        {
-            options.AddSecurityDefinition(
-                JwtBearerDefaults.AuthenticationScheme,
-                new Microsoft.OpenApi.Models.OpenApiSecurityScheme
-                {
-                    Name = "Authorization",
-                    In = Microsoft.OpenApi.Models.ParameterLocation.Header
-                });
-            options.AddSecurityRequirement(
-                new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
-                {
-                    {
-                        new OpenApiSecurityScheme { Scheme = JwtBearerDefaults.AuthenticationScheme },
-                        new string[] {}
-                    }
-                });
-        }
+        
     }
 }

@@ -1,12 +1,8 @@
-﻿using Microsoft.AspNetCore.Hosting;
+using MasterClass.Repository.Mock.Users;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Repository.Mocks.Users;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MasterClass.WebApi.DependencyInjection.Extensions
 {
@@ -14,7 +10,7 @@ namespace MasterClass.WebApi.DependencyInjection.Extensions
     {
         public static IHostBuilder UseMockFiles(this IHostBuilder hostBuilder)
         {
-            hostBuilder.ConfigureAppConfiguration((builderContext, configBuilder) =>
+            hostBuilder.ConfigureAppConfiguration((builderContext, configBuilder) => 
             {
                 configBuilder.AddJsonFile("Mock/users.json");
             });

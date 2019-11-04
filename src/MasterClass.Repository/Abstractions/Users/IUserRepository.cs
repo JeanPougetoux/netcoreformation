@@ -1,7 +1,4 @@
-﻿using MasterClass.Repository.Models.Users;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using MasterClass.Repository.Models.Users;
 
 namespace MasterClass.Repository.Abstractions.Users
 {

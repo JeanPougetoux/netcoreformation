@@ -1,5 +1,3 @@
-﻿using System;
-
 namespace MasterClass.Core
 {
     public class DiagnosticOptions

@@ -1,9 +1,6 @@
-﻿using MasterClass.Business.Abstractions.Users;
+using MasterClass.Business.Abstractions.Users;
 using MasterClass.Business.Users;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MasterClass.Business.DependencyInjection.Extensions
 {
@@ -15,5 +12,5 @@ namespace MasterClass.Business.DependencyInjection.Extensions
 
             return services;
         }
-    }
+    } 
 }

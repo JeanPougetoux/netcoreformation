@@ -1,9 +1,6 @@
-﻿using MasterClass.Repository.Abstractions.Users;
-using MasterClass.Repository.Models.Users;
+using MasterClass.Repository.Abstractions.Users;
+using MasterClass.Repository.Mock.Users;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MasterClass.Repository.DependencyInjection.Extensions
 {
@@ -15,5 +12,5 @@ namespace MasterClass.Repository.DependencyInjection.Extensions
 
             return services;
         }
-    }
+    } 
 }

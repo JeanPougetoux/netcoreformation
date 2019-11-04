@@ -1,16 +1,17 @@
-﻿using CoreLibrary.Options;
-using CoreLibrary.Tools;
-using MasterClass.WebApi.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
-using System.Threading.Tasks;
+using MasterClass.Core.Options;
+using MasterClass.Core.Tools;
+using MasterClass.WebApi.Authentication;
+using MasterClass.WebApi.Authorization.Requirements;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 
 namespace MasterClass.WebApi.DependencyInjection.Extensions
 {
@@ -25,11 +26,12 @@ namespace MasterClass.WebApi.DependencyInjection.Extensions
             if (authenticationSchemes.Count > 1)
             {
                 services
-                .AddAuthentication(options => options.DefaultAuthenticateScheme = options.DefaultChallengeScheme = DEFAULT_AUTHENTICATE_SCHEME)
+                    .AddAuthentication(options => options.DefaultAuthenticateScheme = options.DefaultChallengeScheme = DEFAULT_AUTHENTICATE_SCHEME)
                     .AddPolicyScheme(DEFAULT_AUTHENTICATE_SCHEME, DEFAULT_AUTHENTICATE_SCHEME,
                         options => options.ForwardDefaultSelector = context => GetAuthenticateScheme(context, authenticationSchemes));
+                        
             }
-
+            services.AddSingleton<IAuthorizationHandler, MinimumAgeHandler>();
             return services;
         }
 
@@ -87,7 +89,7 @@ namespace MasterClass.WebApi.DependencyInjection.Extensions
                         };
                     });
 
-                return JwtBearerDefaults.AuthenticationScheme;
+                    return JwtBearerDefaults.AuthenticationScheme;
             }
 
             return null;
@@ -99,7 +101,7 @@ namespace MasterClass.WebApi.DependencyInjection.Extensions
             if (cookieOptions?.Enabled ?? false)
             {
                 services
-                    .AddAuthentication(options =>
+                     .AddAuthentication(options =>
                         options.DefaultAuthenticateScheme
                             = options.DefaultSignInScheme
                             = options.DefaultSignOutScheme

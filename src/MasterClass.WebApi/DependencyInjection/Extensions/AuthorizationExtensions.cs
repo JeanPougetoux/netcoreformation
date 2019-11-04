@@ -1,12 +1,7 @@
-﻿using MasterClass.WebApi.Authorization;
+using MasterClass.Service.Identity;
+using MasterClass.WebApi.Authorization.Policy;
 using MasterClass.WebApi.Authorization.Requirements;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.DependencyInjection;
-using Service.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MasterClass.WebApi.DependencyInjection.Extensions
 {
@@ -21,11 +16,8 @@ namespace MasterClass.WebApi.DependencyInjection.Extensions
                         .RequireClaim(MasterClassClaims.RIGHTS_CLAIMNAME, "SuperAdmin"));
                 options.AddPolicy(Policies.REQUIRED_ADMIN_ROLE, policy => policy.RequireRole("Admin"));
                 options.AddPolicy(Policies.REQUIRED_ALCOHOL_MAJORITY, policy =>
-                        policy.Requirements.Add(new MinimumAgeRequirement(18)));
+                    policy.Requirements.Add(new MinimumAgeRequirement(18)));
             });
-
-            services.AddSingleton<IAuthorizationHandler, MinimumAgeHandler>();
-
             return services;
         }
     }

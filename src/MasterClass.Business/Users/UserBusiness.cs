@@ -1,9 +1,6 @@
-﻿using MasterClass.Business.Abstractions.Users;
+using MasterClass.Business.Abstractions.Users;
 using MasterClass.Repository.Abstractions.Users;
 using MasterClass.Repository.Models.Users;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MasterClass.Business.Users
 {
