@@ -4,8 +4,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:60427",
-      "sslPort": 44370
+      "applicationUrl": "http://localhost:19757",
+      "sslPort": 44336
     }
   },
   "profiles": {
@@ -14,14 +14,13 @@
       "launchBrowser": true,
       "launchUrl": "weatherforecast",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Production"
       }
     },
     "MasterClass.WebApi": {
       "commandName": "Project",
-      "launchBrowser": true,
       "launchUrl": "weatherforecast",
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "applicationUrl": "https://localhost:44336",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

@@ -8,11 +8,11 @@
         "Name": "name1",
         "BirthDate": "01/01/1990",
         "Roles": [
-          "SuperAdmin",
           "Admin",
           "User"
         ],
         "Rights": [
+          "SuperAdmin"
         ]
       },
       {
@@ -42,4 +42,4 @@
       }
     ]
   }
-}  
+}

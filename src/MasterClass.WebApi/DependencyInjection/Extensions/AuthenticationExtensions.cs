@@ -1,4 +1,7 @@
 ﻿using CoreLibrary.Options;
+using CoreLibrary.Tools;
+using MasterClass.WebApi.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -6,11 +9,8 @@ using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using CoreLibrary.Tools;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using MasterClass.WebApi.Authentification;
 using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 namespace MasterClass.WebApi.DependencyInjection.Extensions
 {
@@ -25,7 +25,7 @@ namespace MasterClass.WebApi.DependencyInjection.Extensions
             if (authenticationSchemes.Count > 1)
             {
                 services
-                    .AddAuthentication(options => options.DefaultAuthenticateScheme = DEFAULT_AUTHENTICATE_SCHEME)
+                .AddAuthentication(options => options.DefaultAuthenticateScheme = options.DefaultChallengeScheme = DEFAULT_AUTHENTICATE_SCHEME)
                     .AddPolicyScheme(DEFAULT_AUTHENTICATE_SCHEME, DEFAULT_AUTHENTICATE_SCHEME,
                         options => options.ForwardDefaultSelector = context => GetAuthenticateScheme(context, authenticationSchemes));
             }
@@ -71,7 +71,7 @@ namespace MasterClass.WebApi.DependencyInjection.Extensions
             if (jwtOptions?.Enabled ?? false)
             {
                 services
-                    .AddAuthentication(options => options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme)
+                    .AddAuthentication(options => options.DefaultAuthenticateScheme = options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme)
                     .AddJwtBearer(options =>
                     {
                         options.TokenValidationParameters = new TokenValidationParameters
@@ -103,6 +103,7 @@ namespace MasterClass.WebApi.DependencyInjection.Extensions
                         options.DefaultAuthenticateScheme
                             = options.DefaultSignInScheme
                             = options.DefaultSignOutScheme
+                            = options.DefaultChallengeScheme
                             = CookieAuthenticationDefaults.AuthenticationScheme)
                     .AddCookie(options =>
                     {

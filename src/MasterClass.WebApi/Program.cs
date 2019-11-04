@@ -22,7 +22,6 @@ namespace MasterClass.WebApi
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                        
                 })
                 .UseMockFiles();
     }

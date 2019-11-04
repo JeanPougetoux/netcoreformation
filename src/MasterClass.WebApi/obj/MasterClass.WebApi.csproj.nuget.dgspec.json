@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj": {}
+    "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Business\\MasterClass.Business.csproj": {
+    "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Business\\MasterClass.Business.csproj",
-        "projectName": "MasterClass.Business",
-        "projectPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Business\\MasterClass.Business.csproj",
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Business\\Business.csproj",
+        "projectName": "Business",
+        "projectPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Business\\obj\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Repository\\MasterClass.Repository.csproj": {
-                "projectPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Repository\\MasterClass.Repository.csproj"
+              "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Repository\\Repository.csproj"
               }
             }
           }
@@ -66,69 +66,14 @@
         }
       }
     },
-    "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Core\\MasterClass.Core.csproj": {
+    "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\CoreLibrary\\CoreLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Core\\MasterClass.Core.csproj",
-        "projectName": "MasterClass.Core",
-        "projectPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Core\\MasterClass.Core.csproj",
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\CoreLibrary\\CoreLibrary.csproj",
+        "projectName": "CoreLibrary",
+        "projectPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\CoreLibrary\\CoreLibrary.csproj",
         "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Core\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\formation\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.1": {
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netstandard2.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Repository\\MasterClass.Repository.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Repository\\MasterClass.Repository.csproj",
-        "projectName": "MasterClass.Repository",
-        "projectPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Repository\\MasterClass.Repository.csproj",
-        "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Repository\\obj\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\CoreLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -158,14 +103,64 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
-            "Microsoft.Extensions.Configuration": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Microsoft.Extensions.Hosting": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\formation\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -191,14 +186,14 @@
         }
       }
     },
-    "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Service\\MasterClass.Service.csproj": {
+    "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Service\\MasterClass.Service.csproj",
-        "projectName": "MasterClass.Service",
-        "projectPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Service\\MasterClass.Service.csproj",
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Service\\obj\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -217,8 +212,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Business\\MasterClass.Business.csproj": {
-                "projectPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Business\\MasterClass.Business.csproj"
+              "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Business\\Business.csproj"
+              },
+              "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\CoreLibrary\\CoreLibrary.csproj": {
+                "projectPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\CoreLibrary\\CoreLibrary.csproj"
+              },
+              "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Repository\\Repository.csproj"
               }
             }
           }
@@ -232,11 +233,19 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
             }
           },
           "imports": [
@@ -253,14 +262,14 @@
         }
       }
     },
-    "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj": {
+    "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj",
         "projectName": "MasterClass.WebApi",
-        "projectPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj",
+        "projectPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\src\\MasterClass.WebApi\\MasterClass.WebApi.csproj",
         "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.WebApi\\obj\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\src\\MasterClass.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -279,11 +288,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Core\\MasterClass.Core.csproj": {
-                "projectPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Core\\MasterClass.Core.csproj"
+              "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\CoreLibrary\\CoreLibrary.csproj": {
+                "projectPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\CoreLibrary\\CoreLibrary.csproj"
               },
-              "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Service\\MasterClass.Service.csproj": {
-                "projectPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Service\\MasterClass.Service.csproj"
+              "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\formation\\Documents\\MasterClass-WebApi\\Service\\Service.csproj"
               }
             }
           }
@@ -321,7 +330,11 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[5.0.0-rc4, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[5.0.0-rc4, )"
             }
           },
           "imports": [

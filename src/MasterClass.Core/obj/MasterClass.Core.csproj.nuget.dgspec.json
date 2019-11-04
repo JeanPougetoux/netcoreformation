@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Core\\MasterClass.Core.csproj": {}
+    "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.Core\\MasterClass.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Core\\MasterClass.Core.csproj": {
+    "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.Core\\MasterClass.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Core\\MasterClass.Core.csproj",
+        "projectUniqueName": "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.Core\\MasterClass.Core.csproj",
         "projectName": "MasterClass.Core",
-        "projectPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Core\\MasterClass.Core.csproj",
+        "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.Core\\MasterClass.Core.csproj",
         "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Core\\obj\\",
+        "outputPath": "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

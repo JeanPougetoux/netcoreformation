@@ -1451,11 +1451,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Service\\MasterClass.Service.csproj",
+      "projectUniqueName": "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.Service\\MasterClass.Service.csproj",
       "projectName": "MasterClass.Service",
-      "projectPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Service\\MasterClass.Service.csproj",
+      "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.Service\\MasterClass.Service.csproj",
       "packagesPath": "C:\\Users\\formation\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Service\\obj\\",
+      "outputPath": "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1474,8 +1474,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Business\\MasterClass.Business.csproj": {
-              "projectPath": "C:\\Users\\formation\\Documents\\MasterClass WebApi\\src\\MasterClass.Business\\MasterClass.Business.csproj"
+            "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.Business\\MasterClass.Business.csproj": {
+              "projectPath": "C:\\Users\\formation\\Documents\\netcoreformation\\src\\MasterClass.Business\\MasterClass.Business.csproj"
             }
           }
         }
